@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			
-					<ul class="nav ">
+					<ul class="nav">
 						      <?php
                                     include("connection.php");
                                     $sql = "select * from category";
