@@ -33,13 +33,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
  
+<style>
+	.nav {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 3.4rem 0 3.4rem;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+	.nav {
+    	padding: 0 .7rem 0 .7rem;
+	}
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav a {
+    padding: 1rem 1rem;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #f0f0f0; /* Add hover effect */
+}
+
+/* Custom scrollbar styles */
+.nav::-webkit-scrollbar {
+    height: 4px; /* Change scrollbar height for horizontal scrollbar */
+}
+
+.nav::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round the scrollbar thumb corners */
+}
+
+.nav::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change color of the scrollbar thumb on hover */
+}
+</style>
 
 </head> 
 <body>
-<!-- header -->
-	<?php 
-	include("topbar.php");
-	?>
 <!-- script-for sticky-nav -->
 	<script>
 	$(document).ready(function() {
@@ -62,59 +109,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		include("headertop.php");
 	?>
 <!-- banner -->
-	<div class="banner">
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="w3l_banner_nav_right_banner">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner1">
-								<h3>Make your <span>food</span> with Spicy.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner2">
-								<h3>upto <i>50%</i> off.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<!-- flexSlider -->
-				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
-		</div>
-		<div class="clearfix"></div>
-	</div>
 
 	<div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			
-					<ul class="nav " style="display: flex; justify-content: center">
+					<ul class="nav ">
 						      <?php
                                     include("connection.php");
                                     $sql = "select * from category";
