@@ -35,12 +35,8 @@ body {
 
 <div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="index">LOTIS MINI MART</a>
+			<a href="index">LOTIS MINIMARKET</a>
 		</div> 
-
-
- 
-
 		<div class="product_list_header">  
 
 			<form action="checkout?id=<?php echo $_GET['id']; ?>&user=<?php echo $_GET['user']; ?>" method="post" class="last">
