@@ -39,7 +39,7 @@
 <div class="logo_products">
 		<div class="main_header">
 			<div>
-				<img src="./images/LONTIS.png" alt="Lotis Minimarket" style="max-height: 70px;">
+				<a href="index"><img src="./images/LONTIS.png" alt="Lotis Minimarket" style="max-height: 70px;"></a>
 			</div>
 			
 			<div style="margin-top: 0">
